@@ -1,0 +1,246 @@
+$color-red: #FF0000;
+$color-green: #00FF00;
+$color-blue: #0000FF;
+$color-yellow: #FFFF00;
+$color-grey-dark: #777;
+$color-grey-bright: #ccc;
+
+body{
+
+  .jc-bs3-container.container {
+    width:400px!important;
+    margin: 0 auto!important;
+  }
+
+font-size: 20px;
+
+  header{
+  }
+
+  main{
+
+    font-family: 'Open Sans', sans-serif;
+
+    .center_1050px {
+
+
+      max-width: 1050px;
+      /*!!!!!*/
+      width:95%;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      h1 {
+        color:black;
+      }
+
+      article {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin:50px 0;
+
+        form {
+          background-color: transparent;
+          width:100%;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+
+          .input_container {
+
+            color:black;
+            border:none;
+            margin:20px 0;
+            outline: none;
+            position: relative;
+
+            input {
+              border:none;
+              font-size: 22px;
+              border-bottom: 2px solid black;
+              //background-color: transparent;
+              outline: none;
+              position: relative;
+              display: block;
+              width:100%;
+              color:black;
+
+            }
+
+            label {
+              font-size: 22px;
+              z-index: -2;
+              color: #000000;
+              transition:all 0.5s;
+              display: block;
+              transform-origin: 50px 0;
+              transform:translateX(+10px) translateY(-30px) scale(1);
+
+            }
+
+            input + label {
+              transform:translateX(-10px) translateY(8px) scale(0.8);
+              color: #000000;
+            }
+
+
+          }
+
+          button{
+            background-color: white;
+            font-size: 20px;
+            padding:20px;
+            text-align: center;
+            margin:20px;
+
+          }
+        }
+
+      }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*animationfillmode forwards*/
+
+
+
+
+
+    /*--------------------------------------------------*/
+    /*      MEDIA QUERIES :                             */
+    /*--------------------------------------------------*/
+
+
+    /* viewport > 968px*/
+    /*--------------------------------------------------*/
+
+
+    @media (min-width: 968px) {
+
+        article {
+
+          flex-wrap: nowrap;
+
+          .input_container {
+            width:300px;
+            margin-right: 60px;
+            border-left: 1px solid white;
+            padding-left: 30px;
+          }
+
+          .input_container:nth-child(3) {
+            margin-right: 200px;
+          }
+
+        }
+
+
+    }
+
+
+
+
+    /* viewport < 968px                                 */
+    /*--------------------------------------------------*/
+
+    @media (max-width: 967px) {
+       article {
+        flex-wrap: wrap;
+      }
+
+       article > form ,  article > div {
+        width:100%;
+      }
+
+       article > div {
+        padding-top:10px;
+        margin-top:20px;
+      }
+
+
+      .resp_align {
+        text-align: center;
+      }
+
+       form {
+        margin-right:0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+       form .input_container {
+        width:100%;
+        margin-right:0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+       article h5 {
+        border-top: 1px solid #8B8B8B;
+        display: inline-block;
+        padding:10px 30px;
+      }
+
+
+    }
+
+    /*FIN MEDIA QUERIES*/
+
+  }
+
+  footer {
+  }
+
+
+}
+
+#contenu_fichier{
+  table, tr , td {
+    font-size: 20px;
+  }
+
+  th {
+    background-color: aliceblue;
+  }
+
+
+  td ,th {
+    padding:20px;
+    width:100px;
+    border:1px solid gray;
+
+    i {
+      cursor: pointer;
+      padding-right: 20px;
+    }
+
+  }
+}
+
+
+span {
+  font-size: 20px;
+}

@@ -1,0 +1,122 @@
+body {
+  font-size: 20px; }
+  body .jc-bs3-container.container {
+    width: 400px !important;
+    margin: 0 auto !important; }
+  body main {
+    font-family: 'Open Sans', sans-serif;
+    /*animationfillmode forwards*/
+    /*--------------------------------------------------*/
+    /*      MEDIA QUERIES :                             */
+    /*--------------------------------------------------*/
+    /* viewport > 968px*/
+    /*--------------------------------------------------*/
+    /* viewport < 968px                                 */
+    /*--------------------------------------------------*/
+    /*FIN MEDIA QUERIES*/ }
+    body main .center_1050px {
+      max-width: 1050px;
+      /*!!!!!*/
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      body main .center_1050px h1 {
+        color: black; }
+      body main .center_1050px article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 50px 0; }
+        body main .center_1050px article form {
+          background-color: transparent;
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap; }
+          body main .center_1050px article form .input_container {
+            color: black;
+            border: none;
+            margin: 20px 0;
+            outline: none;
+            position: relative; }
+            body main .center_1050px article form .input_container input {
+              border: none;
+              font-size: 22px;
+              border-bottom: 2px solid black;
+              outline: none;
+              position: relative;
+              display: block;
+              width: 100%;
+              color: black; }
+            body main .center_1050px article form .input_container label {
+              font-size: 22px;
+              z-index: -2;
+              color: #000000;
+              transition: all 0.5s;
+              display: block;
+              transform-origin: 50px 0;
+              transform: translateX(10px) translateY(-30px) scale(1); }
+            body main .center_1050px article form .input_container input + label {
+              transform: translateX(-10px) translateY(8px) scale(0.8);
+              color: #000000; }
+          body main .center_1050px article form button {
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px; }
+    @media (min-width: 968px) {
+      body main article {
+        flex-wrap: nowrap; }
+        body main article .input_container {
+          width: 300px;
+          margin-right: 60px;
+          border-left: 1px solid white;
+          padding-left: 30px; }
+        body main article .input_container:nth-child(3) {
+          margin-right: 200px; } }
+    @media (max-width: 967px) {
+      body main article {
+        flex-wrap: wrap; }
+      body main article > form, body main article > div {
+        width: 100%; }
+      body main article > div {
+        padding-top: 10px;
+        margin-top: 20px; }
+      body main .resp_align {
+        text-align: center; }
+      body main form {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0; }
+      body main form .input_container {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0; }
+      body main article h5 {
+        border-top: 1px solid #8B8B8B;
+        display: inline-block;
+        padding: 10px 30px; } }
+
+#contenu_fichier table, #contenu_fichier tr, #contenu_fichier td {
+  font-size: 20px; }
+
+#contenu_fichier th {
+  background-color: aliceblue; }
+
+#contenu_fichier td, #contenu_fichier th {
+  padding: 20px;
+  width: 100px;
+  border: 1px solid gray; }
+  #contenu_fichier td i, #contenu_fichier th i {
+    cursor: pointer;
+    padding-right: 20px; }
+
+span {
+  font-size: 20px; }
